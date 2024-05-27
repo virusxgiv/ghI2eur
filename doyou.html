@@ -16,6 +16,7 @@
             align-items: center;
             height: 100vh;
             overflow: hidden;
+            flex-direction: column;
         }
 
         @keyframes gradient {
@@ -60,7 +61,7 @@
 
         h1 {
             font-size: 3em;
-            margin: 0;
+            margin: 20px 0;
             text-align: center;
             color: #ffffff;
             text-shadow: 0 0 10px rgba(0, 255, 255, 0.7), 0 0 20px rgba(0, 255, 255, 0.5), 0 0 30px rgba(0, 255, 255, 0.3);
@@ -72,14 +73,22 @@
 
         #By {
             left: 30%;
-            top: 50%;
+            top: 60%;
             transform: translate(-50%, -50%);
         }
 
         #Bn {
             left: 70%;
-            top: 50%;
+            top: 60%;
             transform: translate(-50%, -50%);
+        }
+
+        .profile-pic {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
         }
     </style>
     <script>
@@ -95,6 +104,7 @@
     </script>
 </head>
 <body>
+    <img src="./bg.jpeg" alt="Profile Picture" class="profile-pic">
     <h1>Do you love me?</h1>
     <div id="By">
         <input type="button" class="button" value=" YES " onclick="f1()">
